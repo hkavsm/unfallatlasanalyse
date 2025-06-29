@@ -237,7 +237,7 @@ for mittelpunkt in kmeans.cluster_centers_:
 unfaelle2023.add_to(karte)
 unfaelleFrueher.add_to(karte)
 clusterMittelpunkte.add_to(karte)
-folium.LayerControl(collapsed=False).add_to(karte)    # Button
+folium.LayerControl(collapsed=False).add_to(karte)    # Buttons
 
 # Exportieren der Karte
 karte.save('KA_Unfallkarte.html')

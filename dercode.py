@@ -9,9 +9,6 @@ import matplotlib.pyplot as plt
 import folium
 from folium.plugins import HeatMap
 from sklearn.metrics import silhouette_score
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import r2_score
 from overpass import API
 from time import sleep
 from sys import exc_info

@@ -17,14 +17,14 @@ from time import sleep
 from sys import exc_info
 
 # FUNKTIONEN ZUM ERSTMALIGEN AUSFÜHREN (hier an-/ausschalten mit 1 bzw. 0)
-kaUnfallorteFehlt = 0
+kaUnfallorteFehlt = 1
 
-kaUnfallorte2023Fehlt = 0    # Achtung: stabile Internetverbindung notwendig, zeitaufwendig
+kaUnfallorte2023Fehlt = 1    # Achtung: stabile Internetverbindung notwendig, zeitaufwendig
 
-optimiereKMeans = 0
-erzwingeAnderesK = 0    # es wird k = 308 ("nicht optimal") genommen, damit die exportierte Karte besser aussieht
+optimiereKMeans = 1
+erzwingeAnderesK = 1    # es wird k = 308 ("nicht optimal") genommen, damit die exportierte Karte besser aussieht
 
-korrelationGesucht = 0
+korrelationGesucht = 1
 
 
 # Generieren von KA_Unfallorte.csv
@@ -245,4 +245,4 @@ folium.LayerControl(collapsed=False).add_to(karte)    # Button
 # Exportieren der Karte
 karte.save('KA_Unfallkarte.html')
 
-print("Fertig")
+print("Fertig -- Karte nun im Ordner des Codes als HTML gespeichert")
